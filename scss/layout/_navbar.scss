@@ -1,0 +1,21 @@
+.nav {
+    &__logo {
+        color: $main-color-green;
+    }
+
+    @include costum-menu (flex, center, space-between, 100%, 110px, white);
+     
+    &__lists {
+        @include costum-menu (flex, center, space-between, 35%, auto, white);
+        
+        &--item {
+            @extend %list-nav;
+
+            &-link {
+                text-decoration: none;
+                color: $main-color-green;
+            }
+        }
+
+    }
+}
