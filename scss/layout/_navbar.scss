@@ -1,21 +1,21 @@
 .nav {
-    &__logo {
+    &__title {
         color: $main-color-green;
+        font-size: 45px;
+        font-weight: 500;
     }
 
-    @include costum-menu (flex, center, space-between, 100%, 110px, white);
+    @include costum-menu (flex, center, space-around, 100%, 80px, white);
+
+    .search{
+        border: 16px solid green;
+        border-radius: 30px;
+        outline: none;
+        text-indent: 10px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
      
-    &__lists {
-        @include costum-menu (flex, center, space-between, 35%, auto, white);
-        
-        &--item {
-            @extend %list-nav;
-
-            &-link {
-                text-decoration: none;
-                color: $main-color-green;
-            }
-        }
-
-    }
 }

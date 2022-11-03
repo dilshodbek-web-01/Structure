@@ -1,43 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Structure</title>
+    <title>Pitsa__buyurtma-qilish</title>
 </head>
+
 <body>
+    <!-- ==== MODAL WINDOW START ==== -->
+
+    <section class="modal">
+        <div class="modal__container">
+            <div class="modal__container-content">
+                <img class="modal__container-content-img" src="./images/check.png" alt="check" title="check">
+                <a href="#" class="modal__container-content-img2">
+                    <img src="./images/little-x.svg" alt="little-x">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== MODAL WINDOW END==== -->
+
+
     <!-- ==== HEADER START ==== -->
     <header>
         <div class="container">
             <nav class="nav">
-                <h2 class="nav__logo">
-                    LOGO
-                </h2>
-                <ul class="nav__lists">
-                    <li class="nav__lists--item"><a href="#" class="nav__lists--item-link">home</a></li>
-                    <li class="nav__lists--item"><a href="#" class="nav__lists--item-link">about</a></li>
-                    <li class="nav__lists--item"><a href="#" class="nav__lists--item-link">service</a></li>
-                    <li class="nav__lists--item"><a href="#" class="nav__lists--item-link">contact</a></li>
-                </ul>
+
+                <h1 class="nav__title">
+                    Pitsa buyurtma qilish
+                </h1>
+
+                <form>
+                    <label for="search">
+                        <input class="search" type="search" placeholder="search">
+                    </label>
+                </form>
+
             </nav>
         </div>
     </header>
     <!-- ==== HEADER END ==== -->
-    
-    <main>
-        <section>
-            <div class="container">
 
+    <main>
+        <!-- ==== INTRO START ==== -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro__wrapper">
+                    <div class="order">
+
+                        <div class="bread">
+                            <h2 class="bread-title">
+                                Noni qanday bo`lsin ?
+                            </h2>
+                            <select name="select" id="select" class="select">
+                                <option value="Yupqa">Yupqa</option>
+                                <option value="O`rtacha">O`rtacha</option>
+                                <option value="Qalin">Qalin</option>
+                            </select>
+                        </div>
+
+                        <div class="round">
+                            <h2 class="round-title">Kattaligi</h2>
+                            <div class="list">
+                                <button class="btn active">25 sm</button>
+                                <button class="btn">30 sm</button>
+                                <button class="btn">35 sm</button>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <h2 class="checkbox-title">
+                                Ustiga nima solaylik ?
+                            </h2>
+                            <form action="#" class="form">
+
+                                <div class="form-first">
+
+                                    <label for="checkbox">
+                                        <input id="checkbox" type="checkbox" value="Pomidor">
+                                        Pomidor
+                                    </label>
+
+                                    <label for="Kurka_go`shti">
+                                        <input id="checkbox" type="checkbox" value="Kurka_go`shti">
+                                        Kurka go`shti
+                                    </label>
+
+                                    <label for="Zaytun">
+                                        <input id="checkbox" type="checkbox" value="Zaytun">
+                                        Zaytun
+                                    </label>
+
+                                </div>
+
+                                <div class="form-second">
+
+                                    <label for="Tuzlangan_bodring">
+                                        <input id="checkbox" type="checkbox" value="Tuzlangan_bodring">
+                                        Tuzlangan bodring
+                                    </label>
+
+                                    <label for="Qo`ziqorin">
+                                        <input id="checkbox" type="checkbox" value="Qo`ziqorin">
+                                        Qo`ziqorin
+                                    </label>
+
+                                    <label for="Qazi">
+                                        <input id="checkbox" type="checkbox" value="Qazi">
+                                        Qazi
+                                    </label>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="checkbox">
+                            <h2 class="checkbox-title">
+                                Qo`shimchalar
+                            </h2>
+                            <form action="#" class="form">
+
+                                <label for="Achchiq">
+                                    <input id="extra-product" type="checkbox" value="Achchiq">
+                                    Achchiq
+                                </label>
+
+                                <label class="form2" for="Sosiskali">
+                                    <input id="extra-product" type="checkbox" value="Sosiskali">
+                                    Sosiskali
+                                </label>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="extra">
+                        <hr>
+                        <div class="extra-wrapper">
+                            <h2 class="extra-wrapper-title1">
+                                Non:
+                                <span class="average"></span>
+                            </h2>
+                            <h2 class="extra-wrapper-title2">
+                                Kattaligi:
+                                <span class="sm"></span>
+                            </h2>
+                            <h2 class="extra-wrapper-title3">
+                                Ustida:
+                                <span class="product"></span>
+                            </h2>
+                            <h2 class="extra-wrapper-title4">
+                                Qo`shimcha:
+                                <span class="next-product"></span>
+                            </h2>
+                            <button class="btn-orange">Buyurtma berish</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- ==== INTRO END ==== -->
     </main>
 
     <footer class="footer">
+        <div class="container">
+
+            <div class="footer__wrapper">
+                <h1 class="footer__wrapper-title">
+                    Pitsa buyurtma qilish
+                </h1>
+        
+                <form>
+                    <label for="search">
+                        <input class="search" type="search" placeholder="search">
+                    </label>
+                </form>
+            </div>
+
+        </div>
 
     </footer>
 </body>
-<script src="./script.js"></script>
+<script src="./utilits.js"></script>
+<script defer src="./script.js"></script>
+
 </html>

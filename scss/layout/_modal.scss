@@ -1,0 +1,38 @@
+.modal {
+    display: none;
+
+    &.active{
+        display: block;
+    }
+
+    &__container {
+        @include costum-menu (flex, center, center, 100vw, 100vh,  rgba(0, 0, 0, 0.9));
+        position: fixed;
+        top: 0;
+        z-index: 111;
+
+        &-content {
+            @include costum-menu (flex, center, center, 500px, 270px, white);
+
+            &-img{
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+
+            &-img2 {
+                width: 25px;
+                height: 25px;
+                position: relative;
+                bottom: 90px;
+                left: 140px;
+            }
+
+
+        }
+    }
+}
